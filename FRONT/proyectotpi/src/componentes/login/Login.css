@@ -1,0 +1,68 @@
+.fondolog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    margin: 0;
+}
+
+.loginh1 {
+    background-color: #585b5b;
+    width: 5%;
+    color: #000000;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block; 
+    margin: 0 auto; 
+}
+.Contenedor2 {
+    text-align: center;
+    background-color: #1c1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.login {
+    display: inline-block;
+    text-align: left;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+.inputlog {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 1px solid  #585b5b;
+}
+
+.botonlog {
+    background-color: #048308;
+    width: 25%;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block; 
+    margin: 0 auto;
+}
+
+.boton:hover {
+    text-decoration: none;
+}
