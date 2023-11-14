@@ -1,0 +1,68 @@
+.carrito-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.carrito-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.juegos-enviados {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.juego-en-carrito {
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.juego-imagen {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.juego-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.juego-nombre {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.juego-precio {
+    font-size: 16px;
+}
+
+.resumen-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.resumen-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.comprar-boton {
+    background-color: #4caf50; 
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.comprar-boton:hover {
+    background-color: #45a049;
+}

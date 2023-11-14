@@ -1,0 +1,46 @@
+.productos {
+    display: flex;
+    background-color: #1a1a1a; 
+    color: #fff; 
+    padding: 20px;
+}
+
+.producto-imagen {
+    width: 200px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin-right: 20px;
+}
+
+.producto-detalles {
+    flex: 1;
+}
+
+.producto-titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.producto-precio {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.producto-descripcion {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.productos-boton {
+    background-color: #4caf50; 
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.compra-boton:hover {
+    background-color: #45a049; 
+}
