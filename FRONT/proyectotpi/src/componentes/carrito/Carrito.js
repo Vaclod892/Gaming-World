@@ -35,9 +35,9 @@ export default class Carrito extends Component {
                     <button className="comprar-boton">Comprar</button>
                 </div>
                 <footer>
-                    <li><a href="http://instagram.com"> Intagram </a></li>
-                    <li><a href="http://faceboock.com"> Faceboock </a></li>
-                    <li><a href="http://twitter.com"> Twitter </a></li>
+                    <a href="https://www.instagram.com/gaming_world3045/"><img src="url_de_la_imagen_de_twitter.png" alt="Instagram" /></a>
+                    <a href="http://faceboock.com"><img src="url_de_la_imagen_de_twitter.png" alt="Facebook" /></a>
+                    <a href="http://twitter.com"><img src="url_de_la_imagen_de_twitter.png" alt="Twitter" /></a>
                     <p>&copy; 2023 Gaming-World </p>
                 </footer>
             </div>
