@@ -11,13 +11,11 @@ export default class Carrito extends Component {
                         <ul>
                             <li><a href="http://localhost:3000/">Inicio</a></li>
                             <li><a href="http://localhost:3000/Carrito">Carrito</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
                             <li><a href="http://localhost:3000/iniciodesesion">Iniciar Sesión</a></li>
                             <li><a href="http://localhost:3000/Registro">Registrarse</a></li>
                         </ul>
                     </nav>
                 </header>
-
                 <h1 className="carrito-title">Carrito de Compras</h1>
 
                 <div className="juegos-enviados">
@@ -36,6 +34,12 @@ export default class Carrito extends Component {
                     <p>Método de Pago: Tarjeta de Crédito</p>
                     <button className="comprar-boton">Comprar</button>
                 </div>
+                <footer>
+                    <li><a href="http://instagram.com"> Intagram </a></li>
+                    <li><a href="http://faceboock.com"> Faceboock </a></li>
+                    <li><a href="http://twitter.com"> Twitter </a></li>
+                    <p>&copy; 2023 Gaming-World </p>
+                </footer>
             </div>
         );
     }

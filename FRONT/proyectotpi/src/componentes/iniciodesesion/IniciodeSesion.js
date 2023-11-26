@@ -15,8 +15,8 @@ export default class IniciodeSesion extends Component {
                             <input className='inputInicio' type="text" placeholder="Contraseña" />
                         </label>
                         <div>
-                        <button className='login-boton'> Crear Cuenta </button>
-                        <button className='login-boton'> Cancelar </button>
+                        <button className='inicio-boton'> Crear Cuenta </button>
+                        <a href="http://localhost:3000"><span className="inicio-boton"> Cancelar </span></a>
                         </div>
                     </div>
 

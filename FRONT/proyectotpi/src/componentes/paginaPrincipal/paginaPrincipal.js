@@ -24,11 +24,14 @@ export default class PaginaPrincipal extends Component {
           <img src="url_de_la_imagen.jpg" alt="Nombre del Juego" />
           <a href="http://localhost:3000/Productos"><span className="verproducto-boton"> Ver Producto </span></a>
         </div>
-
         <footer>
-          <p>&copy; 2023 Gaming-World </p>
-        </footer>
+                    <a href="https://www.instagram.com/gaming_world3045/?next=%2F"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\paginaprincipal\instagram.jpeg" alt="Instagram" /></a>
+                    <a href="http://faceboock.com"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\paginaprincipal\faceboock.jpeg" alt="Facebook" /></a>
+                    <a href="http://twitter.com"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\paginaprincipal\twitter.png" alt="Twitter" /></a>
+                    <p>&copy; 2023 Gaming-World </p>
+                </footer>
       </div>
     );
   }
 }
+
