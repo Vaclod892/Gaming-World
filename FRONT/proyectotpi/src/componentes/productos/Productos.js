@@ -39,8 +39,8 @@ export default class Productos extends Component {
                     </div>
                 </div>
                 <footer>
-                    <a href="http://instagram.com"><img src="url_de_la_imagen_de_instagram.png" alt="Instagram" /></a>
-                    <a href="http://faceboock.com"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\paginaprincipal\faceboock.jpeg" alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/gaming_world3045/"><img src="url_de_la_imagen_de_twitter.png" alt="Instagram" /></a>
+                    <a href="http://faceboock.com"><img src="url_de_la_imagen_de_twitter.png" alt="Facebook" /></a>
                     <a href="http://twitter.com"><img src="url_de_la_imagen_de_twitter.png" alt="Twitter" /></a>
                     <p>&copy; 2023 Gaming-World </p>
                 </footer>
