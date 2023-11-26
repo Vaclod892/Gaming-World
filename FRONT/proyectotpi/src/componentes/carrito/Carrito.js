@@ -5,6 +5,19 @@ export default class Carrito extends Component {
     render() {
         return (
             <div className="carrito-container">
+                <header>
+                    <h1> Gaming-World </h1>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000/">Inicio</a></li>
+                            <li><a href="http://localhost:3000/Carrito">Carrito</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="http://localhost:3000/iniciodesesion">Iniciar Sesión</a></li>
+                            <li><a href="http://localhost:3000/Registro">Registrarse</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
                 <h1 className="carrito-title">Carrito de Compras</h1>
 
                 <div className="juegos-enviados">

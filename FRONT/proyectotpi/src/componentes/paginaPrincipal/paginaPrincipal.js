@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './PaginaPrincipal.css';
-import juegos from '../backendtrucho/datos'; 
 
 export default class PaginaPrincipal extends Component {
   render() {
@@ -10,25 +9,21 @@ export default class PaginaPrincipal extends Component {
           <h1> Gaming-World </h1>
           <nav>
             <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="carrito.html">Carrito</a></li>
+              <li><a href="http://localhost:3000/">Inicio</a></li>
+              <li><a href="http://localhost:3000/Carrito">Carrito</a></li>
               <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="http://google.com"><span onClick={"not found"} className="iniciarS-boton">Iniciar Sesión</span></a></li>
+              <li><a href="http://localhost:3000/iniciodesesion">Iniciar Sesión</a></li>
+              <li><a href="http://localhost:3000/Registro">Registrarse</a></li>
             </ul>
           </nav>
         </header>
 
-        <section className="catalogo">
-          <h2>Catálogo de Videojuegos</h2>
-          {juegos.map((juego) => (
-            <div key={juego.id} className="juego">
-              <img src={juego.imagen} alt={juego.nombre} />
-              <h3>{juego.nombre}</h3>
-              <p>Precio: ${juego.precio}</p>
-              <a href="comprar.html">Ver Producto</a>
-            </div>
-          ))}
-        </section>
+        <div className="juego">
+          <h2>Nombre del Juego</h2>
+          <p>Precio: $49.99</p>
+          <img src="url_de_la_imagen.jpg" alt="Nombre del Juego" />
+          <a href="http://localhost:3000/Productos"><span className="verproducto-boton"> Ver Producto </span></a>
+        </div>
 
         <footer>
           <p>&copy; 2023 Gaming-World </p>
