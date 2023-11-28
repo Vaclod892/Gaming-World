@@ -14,17 +14,42 @@ export default class NewGame extends Component {
                     <br />
                     <label className="formLabel">
                         Desarrolladora:
-                        <input type="text" className="inputFormulario" />
+                        <select>
+                                <option>Valve</option>
+                                <option>Ubisoft</option>
+                                <option>Rockstar Games</option>
+                                <option>Nintendo</option>
+                                <option>Naugthty Dog</option>
+                                <option>FromSoftware</option>
+                                <option>Electronic Arts</option>
+                                <option>Capcom</option>
+                                <option>Bethesda</option>
+                                <option>Activision</option>
+                            </select>
                     </label>
                     <br />
                     <label className="formLabel">
                         Plataforma:
-                        <input type="text" className="inputFormulario" />
+                            <select>
+                                <option>Pc</option>
+                                <option>Ps4</option>
+                                <option>Ps5</option>
+                                <option>Switch</option>
+                                <option>Xbox</option>
+                            </select>
                     </label>
                     <br />
                     <label className="formLabel">
                         Género:
-                        <input type="text" className="inputFormulario" />
+                            <select>
+                                <option>Shooter</option>
+                                <option>Terror</option>
+                                <option>Carreras</option>
+                                <option>Deportes</option>
+                                <option>Mundo Abierto</option>
+                                <option>Simulación</option>
+                                <option>Peleas</option>
+                            </select>
                     </label>
                     <br />
                     <label className="formLabel">
