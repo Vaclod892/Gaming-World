@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #333;
+    background-color: #020E7C;
     margin: 0;
 }
 
 .registroh1 {
-    background-color: #585b5b;
+    background-color: #0B2DEB;
     width: 11,5%;
     color: #000000;
     padding: 8px;
@@ -22,7 +22,7 @@
 }
 .Contenedor2 {
     text-align: center;
-    background-color: #1c1e1e;
+    background-color: #16192b;
     padding: 20px;
     border-radius: 5px;
     color: #fff;

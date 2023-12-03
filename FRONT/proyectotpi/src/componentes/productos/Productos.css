@@ -12,11 +12,19 @@
     margin-right: 20px;
 }
 
-.producto-detalles {
-    flex: 1;
-}
-
 .producto-titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.producto-plataforma {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.producto-desarrolladora {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.producto-genero{
     font-size: 24px;
     margin-bottom: 10px;
 }
