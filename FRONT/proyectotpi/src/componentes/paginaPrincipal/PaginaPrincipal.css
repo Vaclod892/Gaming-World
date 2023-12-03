@@ -19,6 +19,7 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -41,7 +42,8 @@ nav ul li a {
     justify-content: space-around;
 }
 
-.juego {
+.tarjeta-juegos {
+    display:flex; 
     width: 300px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -57,10 +59,11 @@ nav ul li a {
 
 .juego h3 {
     margin: 10px 0;
+    color: #333;
 }
 
 .juego p {
-    color: #888;
+    color: #555;
 }
 
 .juego a {

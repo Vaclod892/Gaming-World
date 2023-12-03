@@ -1,50 +1,55 @@
 import React, { Component } from 'react';
 import './Productos.css';
+import axios from "axios";
 
 export default class Productos extends Component {
-    render() {
-        return (
-            <div>
-                <header>
-                    <h1> Gaming-World </h1>
-                    <nav>
-                        <ul>
-                            <li><a href="http://localhost:3000/">Inicio</a></li>
-                            <li><a href="http://localhost:3000/Carrito">Carrito</a></li>
-                            <li><a href="http://localhost:3000/iniciodesesion">Iniciar Sesión</a></li>
-                            <li><a href="http://localhost:3000/Registro">Registrarse</a></li>
-                        </ul>
-                    </nav>
-                </header>
-                <div className='productos'>
-                    <img className='producto-imagen' src="url_de_la_imagen_del_juego.jpg" alt="Nombre del Juego" />
-                    <div className="producto-detalles">
-                        <h2 className='producto-titulo'>Nombre del Juego</h2>
-                        <p className='producto-precio'>$49.99</p>
-                        <label>
-                            <p>Plataforma:</p>
-                            <select>
-                                <option>Pc</option>
-                                <option>Ps4</option>
-                                <option>Ps5</option>
-                                <option>Switch</option>
-                                <option>Xbox</option>
-                            </select>
-                        </label>
-                        <p className='producto-descripcion'>
-                            Descripción detallada del juego y sus características.
-                        </p>
-                        <button className='productos-boton'>Agregar al carro</button>
-                        <a href="http://localhost:3000"><span className="productos-boton"> Atras </span></a>
-                    </div>
-                </div>
-                <footer>
-                    <a href="https://www.instagram.com/gaming_world3045/"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\productos\instagram.jpeg" alt="Instagram" /></a>
-                    <a href="http://faceboock.com"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\productos\faceboock.jpeg" alt="Facebook" /></a>
-                    <a href="https://twitter.com/GWorld2323"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\productos\twitter.png" alt="Twitter" /></a>
-                    <p>&copy; 2023 Gaming-World </p>
-                </footer>
-            </div>
-        );
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      juegos: [],
+    };
+  }
+
+  componentDidMount() {
+    axios.get('https://71c.ctpoba.ar/api/juegos')
+      .then((res) => {
+        const { juegos } = res.data;
+        console.log(juegos);
+        this.setState({ juegos });
+      })
+      .catch((error) => {
+        alert(error);
+        console.log(error);
+      });
+  }
+
+  render() {
+    const { juegos } = this.state;
+
+    return (
+      <div className="container col-12 col-lg-5">
+        <h1 className="text-center"> Producto </h1>
+        <div className="form-group row">
+          <div className='productos'>
+          
+            {juegos.map((juego) => (
+              <div key={juego.id} className="producto-detalles">
+                <h2 id="nombre">Nombre del Juego: {juego.nombre}</h2>
+                <label>
+                  <p id="genero_id">Genero: {juego.genero_id}</p>
+                </label>
+                <label>
+                  <p id="desarrolladora_id">Desarrolladora: {juego.desarrolladora_id}</p>
+                </label>
+                <label>
+                  <p id="plataforma_id">Plataforma: {juego.plataforma_id}</p>
+                </label>
+                <p id="precio" className='producto-precio'>Precio: {juego.precio}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
