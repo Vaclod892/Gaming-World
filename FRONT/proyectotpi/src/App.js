@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import PaginaPrincipal from './componentes/paginaPrincipal/listajuegos';
+import PaginaPrincipal from './componentes/paginaPrincipal/paginaprincipal';
 import Carrito from './componentes/carrito/Carrito';
 import Productos from './componentes/productos/Productos';
 import IniciodeSesion from './componentes/iniciodesesion/IniciodeSesion';

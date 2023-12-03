@@ -37,11 +37,13 @@ export default class Listajuegos extends React.Component {
             </header>
                 <h1>Lista de juegos:</h1>
 
+                <div id="lista_juegos">
                 {this.state.juegos.map((juego, clave) => {
                     return (
                    <Tarjetajuegos key={clave} datos={juego} />
                     )
                 })}
+                </div>
                  <footer>
                     <a href="https://www.instagram.com/gaming_world3045/?next=%2F"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\paginaprincipal\instagram.jpeg" alt="Instagram" /></a>
                     <a href="http://faceboock.com%22%3E/"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\paginaprincipal\faceboock.jpeg" alt="Facebook" /></a>
