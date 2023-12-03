@@ -32,7 +32,7 @@ export default class Tarjetajuegos extends React.Component {
                     <p className="juego-desarrolladora">Desarrolladora: {datos.desarrolladora_id}</p>
                     <p className="juego-plataforma">Plataforma: {datos.plataforma_id}</p>
                     <p className="juego-precio">Precio: {datos.precio}</p>
-                    <button className="btn btn-danger mx-1" value={datos.id} onClick={this.Verproducto}>Ver Producto</button>
+                    <button className="boton-Verproducto" value={datos.id} onClick={this.Verproducto}>Ver Producto</button>
                 </div>
             </div>
         );
