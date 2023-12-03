@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import './PaginaPrincipal.css';
+import terre from '../../assets/images/terreneitor.jpg'
 
 export default class Tarjetajuegos extends React.Component { 
     constructor(props) {
@@ -27,6 +28,7 @@ export default class Tarjetajuegos extends React.Component {
         return (
             <div className="tarjeta-juegos">
                 <div className="card-body col">
+                <img src= {terre} />
                     <h3 className="juego-nombre">Nombre: {datos.nombre}</h3>
                     <p className="juego-genero">Genero: {datos.genero_id}</p>
                     <p className="juego-desarrolladora">Desarrolladora: {datos.desarrolladora_id}</p>
