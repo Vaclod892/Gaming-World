@@ -66,14 +66,34 @@ nav ul li {
     height: auto;
 }
 
-.juego h3 {
-    margin: 10px 0;
-    color: #333;
+.juego-nombre{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.juego-genero{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.juego-desarrolladora{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.juego p {
-    color: #555;
+.juego-plataforma{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
+
+.juego-precio{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 
 .juego a {
     display: block;
