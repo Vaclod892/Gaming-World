@@ -11,26 +11,69 @@ import NewGame from './componentes/newgame/NewGame';
 
 export default class App extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {
-      juegos: [],
-      selectedJuegoId: null,
-    };
-  }
+      super(props);
+      this.state = {
+        juegos: [],
+        pou:{
+          "nombre": "POU 2",
+           "genero_id": "1",
+           "desarrolladora_id":"10",
+           "plataforma_id":"2",
+           "precio": "14.99"
+      }
+      };
+    }
 
-  handleJuegoSelect = (juegoId) => {
-    axios.get(`http://localhost:3103/api/juegos/${juegoId}`)
-      .then((res) => {
-        const { juegos } = res.data;
-        console.log(juegos);
-        this.setState({ juegos, selectedJuegoId: juegoId });
-      })
-      .catch((error) => {
-        alert(error);
-        console.log(error);
-      });
-  };
+  componentDidMount() {
+        axios.post('http://localhost:3103/api/juegos',{ juegos: this.state.pou })
+            .then((res) => {
+                console.log("el juego fue cargado con exito",res.data);
+            })
+            .catch((error) => {
+                alert(error)
+                console.log(error)
+            })
+    }
 
+
+//Filtro
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     juegos: [],
+  //     selectedJuegoId: null,
+  //   };
+  // }
+
+ // componentDidMount() {
+//     axios.get('http://localhost:3103/api/juegos/3')
+//         .then((res) => {
+//             const { juegos } = res.data;
+//             console.log(juegos)
+//             this.setState({ juegos })
+//         })
+//         .catch((error) => {
+//             alert(error)
+//             console.log(error)
+//         })
+// }
+
+//obtencion de titulo:
+  //   state = {
+//     juegos: []
+// }
+// componentDidMount() {
+//     axios.get('http://localhost:3103/api/juegos')
+//         .then((res) => {
+//             const { juegos } = res.data;
+//             console.log(juegos)
+//             this.setState({ juegos })
+//         })
+//         .catch((error) => {
+//             alert(error)
+//             console.log(error)
+//         })
+// }
   render() {
     return (
       <BrowserRouter>

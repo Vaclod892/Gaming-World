@@ -1,7 +1,7 @@
 import React from "react";
 // import axios from "axios";
 import './PaginaPrincipal.css';
-import Tarjetajuegos from "./tarjetajuegos.js";
+// import Tarjetajuegos from "./tarjetajuegos.js";
 
 export default class Listajuegos extends React.Component {
     render() {
