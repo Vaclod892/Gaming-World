@@ -11,21 +11,23 @@ import NewGame from './componentes/newgame/NewGame';
 
 export default class App extends React.Component {
   constructor(props) {
-      super(props);
-      this.state = {
-        juegos: [],
-        pou:{
-          "nombre": "POU 2",
-           "genero_id": "1",
-           "desarrolladora_id":"10",
-           "plataforma_id":"2",
-           "precio": "14.99"
+        super(props);
+        this.state = {
+          juegos: [],
+          pou:{
+            "nombre": "POU 3",
+             "genero_id": "1",
+             "desarrolladora_id":"10",
+             "plataforma_id":"2",
+             "precio": "14.99"
+        }
+        };
       }
-      };
-    }
 
-  componentDidMount() {
-        axios.post('http://localhost:3103/api/juegos',{ juegos: this.state.pou })
+
+
+componentDidMount() {
+        axios.put('http://localhost:3103/api/juegos/94',  this.state.pou )
             .then((res) => {
                 console.log("el juego fue cargado con exito",res.data);
             })
@@ -34,6 +36,33 @@ export default class App extends React.Component {
                 console.log(error)
             })
     }
+
+  //mandar juegos
+  // constructor(props) {
+  //     super(props);
+  //     this.state = {
+  //       juegos: [],
+  //       pou:{
+  //         "nombre": "POU 8",
+  //          "genero_id": "1",
+  //          "desarrolladora_id":"10",
+  //          "plataforma_id":"2",
+  //          "precio": "14.99"
+  //     }
+  //     };
+  //   }
+
+  //   componentDidMount() {
+  //     axios.post('http://localhost:3103/api/juegos', this.state.pou)
+  //         .then((res) => {
+  //             console.log("El juego fue cargado con éxito", res.data);
+  //         })
+  //         .catch((error) => {
+  //             alert(error);
+  //             console.log(error);
+  //         });
+  // }
+  
 
 
 //Filtro
@@ -58,7 +87,7 @@ export default class App extends React.Component {
 //         })
 // }
 
-//obtencion de titulo:
+//obtencion de juegos:
   //   state = {
 //     juegos: []
 // }
