@@ -13,7 +13,7 @@ export default class Tarjetajuegos extends React.Component {
             axios.get('https://71c.ctpoba.ar/api/juegos/' + event.target.value)
               .then(response => {
                 // Redirigir a la URL externa
-                window.location.href = 'http://localhost:3000/Productos';
+                window.location.href = 'http://localhost:3000/Productos/'+ this.props.datos.juegos_id;
 
               })
               .catch(error => {

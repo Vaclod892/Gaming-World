@@ -1,9 +1,26 @@
 import React from "react";
-// import axios from "axios";
+import axios from "axios";
 import './PaginaPrincipal.css';
-// import Tarjetajuegos from "./tarjetajuegos.js";
+import Tarjetajuegos from "./tarjetajuegos.js";
+
 
 export default class Listajuegos extends React.Component {
+    state = {
+        juegos: []
+    }
+    componentDidMount() {
+        axios.get('http://localhost:3103/api/juegos')
+            .then((res) => {
+                const { juegos } = res.data;
+                console.log(juegos)
+                this.setState({ juegos })
+            })
+            .catch((error) => {
+                alert(error)
+                console.log(error)
+            })
+          }
+
     render() {
         return (
             <div>
@@ -22,11 +39,11 @@ export default class Listajuegos extends React.Component {
                 <h1>Lista de juegos:</h1>
 
                 <div id="lista_juegos">
-                {/* {this.state.juegos.map((juego, clave) => {
+                {this.state.juegos.map((juego, clave) => {
                     return (
                    <Tarjetajuegos key={clave} datos={juego} />
                     )
-                })} */}
+                })}
                 </div>
                  <footer>
                     <a href="https://www.instagram.com/gaming_world3045/?next=%2F"><img src="C:\proyecto\FRONT\proyectotpi\src\componentes\paginaprincipal\instagram.jpeg" alt="Instagram" /></a>
