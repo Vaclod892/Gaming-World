@@ -14,6 +14,7 @@ export default class Tarjetajuegos extends React.Component {
               .then(response => {
                 // Redirigir a la URL externa
                 window.location.href = 'http://localhost:3000/Productos';
+
               })
               .catch(error => {
                 console.error('Error al obtener datos del juego:', error);

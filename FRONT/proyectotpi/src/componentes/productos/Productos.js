@@ -1,36 +1,30 @@
 import React, { Component } from 'react';
 import './Productos.css';
-// import axios from "axios";
+import axios from "axios";
 
 export default class Productos extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      juegos: [
-        {
-          "juegos_id": 2,
-          "nombre": "Grand Theft Auto 6",
-          "genero_id": 5,
-          "desarrolladora_id": 3,
-          "plataforma_id": 2,
-          "precio": 69.99
-        }
-      ],
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     juegos: [],
+  //     selectedJuegoId: null,
+  //   };
+  // }
 
-  // componentDidMount() {
-  //   axios.get('https://71c.ctpoba.ar/api/juegos')
+  // handleJuegoSelect = (juegoId) => {
+  //   axios.get(`http://localhost:3103/api/juegos/${juegoId}`)
   //     .then((res) => {
   //       const { juegos } = res.data;
   //       console.log(juegos);
-  //       this.setState({ juegos });
+  //       this.setState({ juegos, selectedJuegoId: juegoId });
   //     })
   //     .catch((error) => {
   //       alert(error);
   //       console.log(error);
   //     });
-  // }
+  // };
+
+
 
   render() {
     const { juegos } = this.state;
