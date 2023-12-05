@@ -6,7 +6,7 @@ import terre from '../../assets/images/terreneitor.jpg'
 export default class Tarjetajuegos extends React.Component { 
     constructor(props) {
         super(props);
-        console.log(props);
+        // console.log(props);
         this.state = {};
 
         this.Verproducto = event => {
@@ -24,17 +24,19 @@ export default class Tarjetajuegos extends React.Component {
 
     render() {
         const { datos } = this.props;
-        console.log({ datos });
+        const { agregarCarrito } = this.props;
+        // console.log({ datos });
         
         return (
             <div className="tarjeta-juegos">
                 <div className="card-body col">
-                <img src= {terre} />
+                <img alt = "imagen de juego" src= {terre} />
                     <h3 className="juego-nombre">Nombre: {datos.nombre}</h3>
                     <p className="juego-genero">Genero: {datos.genero_id}</p>
                     <p className="juego-desarrolladora">Desarrolladora: {datos.desarrolladora_id}</p>
                     <p className="juego-plataforma">Plataforma: {datos.plataforma_id}</p>
                     <p className="juego-precio">Precio: {datos.precio}</p>
+                    <button className="boton-Verproducto" onClick={agregarCarrito}>Carrito </button>
                     <button className="boton-Verproducto" value={datos.id} onClick={this.Verproducto}>Ver Producto</button>
                 </div>
             </div>
