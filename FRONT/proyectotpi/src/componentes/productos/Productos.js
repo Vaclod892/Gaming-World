@@ -8,22 +8,11 @@ export default class Productos extends Component {
     this.state = {
       juegos: []
     };
-
-    this.AgregarAlcarro = event => {
-      axios.post('http://localhost:3103/api/juegos', this.state.juegos)
-        .then((res) => {
-          console.log("El juego fue cargado con éxito", res.data);
-        })
-        .catch((error) => {
-          alert(error);
-          console.log(error);
-        });
-    };
   }
 
   componentDidMount() {
     const juegos_id = window.location.href.split("/")[4]
-    axios.get('http://localhost:3103/api/juegos/' + juegos_id)
+    axios.get('http://localhost:3103/api/juegos/'+ juegos_id)
       .then((res) => {
         const { juegos } = res.data;
         console.log(juegos)
@@ -67,7 +56,7 @@ export default class Productos extends Component {
                   <p className="producto-plataforma" id="plataforma_id">Plataforma: {juego.plataforma_id}</p>
                 </label>
                 <p id="precio" className='producto-precio'>Precio: {juego.precio}</p>
-                <button className="boton-Verproducto" value={juegos.id} onClick={this.AgregarAlcarro}>Agregar al carro</button>
+                <button className="boton-Verproducto" value={"not found"} onClick={"not found"}>Agregar al carro</button>
               </div>
             ))}
           </div>
