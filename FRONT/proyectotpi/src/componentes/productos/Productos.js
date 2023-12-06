@@ -7,8 +7,20 @@ export default class Productos extends Component {
     super(props);
     this.state = {
       juegos: []
+
     };
-  }
+    // this.AgregarAlCarro = event => {
+    //      axios.post('http://localhost:3103/Carrito/', this.state.juegos.id) 
+        
+    //     .then((res) => {
+    //       console.log("El juego fue cargado con éxito", res.data);
+    //     })
+    //     .catch((error) => {
+    //       alert(error);
+    //       console.log(error);
+    //     });
+    // };
+  } 
 
   componentDidMount() {
     const juegos_id = window.location.href.split("/")[4]
@@ -28,7 +40,7 @@ export default class Productos extends Component {
     const { juegos } = this.state;
 
     return (
-      <div className="container col-12 col-lg-5">
+      <div>
         <header>
           <h1> Gaming-World </h1>
           <nav>
@@ -40,7 +52,7 @@ export default class Productos extends Component {
             </ul>
           </nav>
         </header>
-        <div className="form-group row">
+        <div>
           <div className='productos'>
 
             {juegos.map((juego) => (
@@ -56,7 +68,7 @@ export default class Productos extends Component {
                   <p className="producto-plataforma" id="plataforma_id">Plataforma: {juego.plataforma_id}</p>
                 </label>
                 <p id="precio" className='producto-precio'>Precio: {juego.precio}</p>
-                <button className="boton-Verproducto" value={"not found"} onClick={"not found"}>Agregar al carro</button>
+                <button className="boton-Verproducto" value={juegos.id} onClick={this.AgregarAlCarro}>Agregar al carro</button>
               </div>
             ))}
           </div>
