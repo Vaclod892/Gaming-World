@@ -32,6 +32,7 @@ export default class Listajuegos extends React.Component {
                         <li><a  className="boton-carrito" href="http://localhost:3000/Carrito">Carrito</a></li>
                         <li><a className="boton-iniciar_sesion"  href="http://localhost:3000/IniciodeSesion">Iniciar Sesión</a></li>
                         <li><a  className="boton-registrarse" href="http://localhost:3000/Registro">Registrarse</a></li>
+                        <li><a  className="boton-newgame" href="http://localhost:3000/Nuevojuego">Agregar nuevo juego</a></li>
                     </ul>
                 </nav>
                

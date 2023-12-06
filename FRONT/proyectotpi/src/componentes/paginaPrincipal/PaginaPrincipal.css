@@ -49,6 +49,11 @@ nav ul li {
     color: #fff;
     font-weight: bold;
 }
+.boton-newgame {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
 
 
 .tarjeta-juegos {
@@ -117,6 +122,7 @@ nav ul li {
     border: none;
     border-radius: 5px;
 }
+
 
 footer {
     background-color: #0B2DEB;
